@@ -1,0 +1,14 @@
+type Query {
+  products: [Product!]
+}
+
+type Product {
+  id: String!
+  stats24Hour: Stats24Hour
+}
+
+type Stats24Hour {
+  productId: String
+  open: String
+  last: String
+}
